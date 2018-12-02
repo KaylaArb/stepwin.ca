@@ -132,8 +132,8 @@ section {
     padding-bottom: 50px;
 }
 #lambda-logo {
-    max-height: 90px;
-    margin: 20px 0px;
+    max-height: 100px;
+    /* margin: 20px 0px; */
 }
 #footer-slogan img {
     height: 12px;
