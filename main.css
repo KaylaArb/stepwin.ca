@@ -28,6 +28,8 @@
     --rose-red: #f3dfd9; /*goes nicely with mild-dark*/
 }
 
+/* === elements === */
+
 /* Buttons */
 .button {
     text-decoration: none;
@@ -65,7 +67,28 @@
     color: var(--bronze);
 }
 
-/* markup */
+/* dropdown */
+select {
+    color: var(--warm-dark);
+    background-color: var(--beige);
+    height: 35px;
+    width: 240px;
+    font-size: 13pt;
+    border: none;
+    border-radius: 5px;
+}
+select:focus {
+    border-color: var(--bone-white);
+}
+option {
+    height: 30px;
+}
+option:hover, option:active {
+    outline-color: var(--bronze);
+    background-color: var(--bronze);
+}
+
+/* === markup === */
 html, body {
     margin: 0;
     display: flex;
@@ -88,11 +111,22 @@ section {
 
 #router {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    font-size: 14pt;
     color: var(--calm-dark);
     background-color: var(--bronze);
     border-bottom: 1px solid darkgray;
 }
+#router > * {
+    margin: 0px 10px;
+}
+#router #iam {
+    font-weight: 700;
+}
+#router .routes{
+    margin-left: 75px;
+}
+
 
 .three-columns {
     flex-direction: row;
