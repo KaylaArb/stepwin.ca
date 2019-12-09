@@ -31,54 +31,123 @@
 </head>
 <body>
     <section id="banner">
-        
+        <div id="logo">
+            <img src="img/logo.png" alt="StepWin Logo">
+            <div id="slogan">
+                    Straightforward energy modeling for BC's residential builders.
+            </div>
+        </div>
+        <div id="homes">
+            <img class="home-picture" id="left-home" src="img/homes1.png" alt="">
+            <img class="home-picture" id="middle-home" src="img/homes2.png" alt="">
+            <img class="home-picture" id="right-home" src="img/homes3.png" alt="">
+        </div>
     </section>
     <section id="router">
         <span id="iam">
             I Am 
         </span>
-        <select name="options" id="router-options">
-            <option value="existing">An Existing User</option>
-            <option value="city">A City Staff</option>
-            <option value="builder">A Builder</option>
-            <option value="advisor">An Energy Advisor</option>
-            <option value="industry">A Manufacturer</option>
-            <option value="curious">Just Curious</option>
+        <select name="options" class="hasShadow" id="router-options" onchange="handleRouter();">
+            <option value="existing-option">An Existing User</option>
+            <option value="city-option">A City Staff</option>
+            <option value="builder-option">A Builder</option>
+            <option value="advisor-option">An Energy Advisor</option>
+            <option value="industry-option">A Manufacturer</option>
+            <option value="programmer-option">A Programmer</option>
+            <option value="curious-option">Just Curious</option>
         </select>
         <div class="routes">
-            <a class="button gold-button" href="">Log In Here</a>
+            <div class="route existing-option" id="log-in">
+                <a class="button hasShadow gold-button" href="">Log In Here</a>
+            </div>
+            <div class="route city-option displayNone" id="demo">
+                <a class="button hasShadow gold-button" href="https://goo.gl/forms/UTE1QpAy8XwYiZHf2">Request A Demo</a>
+            </div>
+            <div class="route builder-option displayNone" id="access">
+                <a class="button hasShadow gold-button" href="https://goo.gl/forms/nNeUJxGdKb02Gnk32">Request Access</a>
+            </div>
+            <div class="route programmer-option displayNone" id="access">
+                <a class="button hasShadow gold-button" href="mailto:info@stepwin.ca?subject=InsightKit">Request InsightKit Docs</a>
+            </div>
+            <div class="route advisor-option industry-option displayNone" id="contact">
+                <a class="button hasShadow gold-button" href="mailto:info@stepwin.ca?subject=Industry connection">Contact Us</a>
+            </div>
+            <div class="route curious-option displayNone" id="contact">
+                <a class="button hasShadow gold-button" href="https://goo.gl/forms/Tf8cYlltRCxzuMTx1">Join the mailing list</a>
+            </div>
         </div>
     </section>
-    <section class="three-columns" id="products">
-        <div class="column">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem architecto. Quo quisquam, aspernatur animi repellat debitis dolores asperiores recusandae ratione molestiae, voluptas, aperiam deleniti. Voluptas consectetur nisi ab distinctio.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem architecto. Quo quisquam, aspernatur animi repellat debitis dolores asperiores recusandae ratione molestiae, voluptas, aperiam deleniti. Voluptas consectetur nisi ab distinctio.
-            </p>
+    <section id="intro">
+        <h1>StepWin Targets the BC Step Code</h1>
+        <p>
+            A customizable solution for BC municipalities to streamline their Step Code implementation and adoption. Builders get access to the software through their municipality and use it at the early stage of their design to meet the municipal Step Code target.
+        </p>
+    </section>
+    <section id="features">
+        <div class="feature laptop-right">
+            <div class="feature-list">
+                <h2>Intuitive Interface</h2>
+                <ul>
+                    <li>Simple interface with focus only on key drivers of energy consumption.</li>
+                    <li>Designed for decision-making from the very early stage of house design.</li>
+                    <li>Guides the decisions with help bubbles and suggestions.</li>
+                    <li>Available for every climate of British Columbia.</li>
+                    <li>Accessible on any platform with a modern browser.</li>
+                </ul>
+            </div>
+            <div class="laptop">
+                <img src="./img/laptop1.png" alt="">
+            </div>
         </div>
-        <div class="column">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem architecto. Quo quisquam, aspernatur animi repellat debitis dolores asperiores recusandae ratione molestiae, voluptas, aperiam deleniti. Voluptas consectetur nisi ab distinctio.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem architecto. Quo quisquam, aspernatur animi repellat debitis dolores asperiores recusandae ratione molestiae, voluptas, aperiam deleniti. Voluptas consectetur nisi ab distinctio.
-            </p>
+        <div class="feature laptop-left">
+            <div class="feature-list">
+                <h2>Insightful Outputs</h2>
+                <ul>
+                    <li>Smart selection of best-performing designs based on cost and energy performance.</li>
+                    <li>Design export to different formats including HOT2000.</li>
+                    <li>Cost analysis and breakdown.</li>
+                    <li>Prioritization of passive elements for durability and constructability.</li>
+                    <li>Details and references for each suggestion.</li>
+                </ul>
+            </div>
+            <div class="laptop">
+                <img src="./img/laptop2.png" alt="">
+            </div>
         </div>
-        <div class="column">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem architecto. Quo quisquam, aspernatur animi repellat debitis dolores asperiores recusandae ratione molestiae, voluptas, aperiam deleniti. Voluptas consectetur nisi ab distinctio.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem architecto. Quo quisquam, aspernatur animi repellat debitis dolores asperiores recusandae ratione molestiae, voluptas, aperiam deleniti. Voluptas consectetur nisi ab distinctio.
-            </p>
+    </section>
+    <section id="products">
+        <h2>StepWin under the hood:</h2>
+        <div class="three-columns">
+            <div class="transparent-column">
+                <img class="product-image" src="img/insight-logo.png" alt="">
+                <h3>A million times quicker, literally</h3>
+                <p>
+                    Cost, energy efficiency, durability, and environmental impact for millions of possible scenarios in a matter of seconds. 
+                </p>
+            </div>
+            <div class="transparent-column">
+                <img class="product-image" src="img/insightKit-logo.png" alt="InsightEngine">
+                <h3>Turn-key embedding</h3>
+                <p>
+                    Are you in Prefab? Manufacturing? Research? Like to assess the energy performance in your own way? Make your existing process Step Code ready with InsightKit.
+                </p>
+                <p>
+                    Like to expand StepWin? build your own extension.
+                </p>
+            </div>
+            <div class="transparent-column">
+                <img class="product-image" src="img/bridges-logo.png" alt="">
+                <h3>Maximum extendability</h3>
+                <p>
+                    Seamlessly connect tools. Export InsightEngine designs to HOT2000. Integrate climate and city data in your design.
+                </p>
+            </div>
         </div>
     </section>
     <section id="contact">
-        Like To Say Something?
-        <a href="" class="button blue-button" id="contact-us">
-            Contact Us
+        Get in touch:
+        <a href="mailto:info@stepwin.ca" class="button blue-button" id="contact-us">
+            info@stepwin.ca
         </a>
     </section>
     <section id="footer">
