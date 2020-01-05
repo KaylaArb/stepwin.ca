@@ -203,7 +203,7 @@ section#main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('./res/img/stock_plan.jpg');
+    background: url('./res/img/stock_plan.webp');
     background-size: cover; /* NOTE background-size must be under background to work */
 }
 
@@ -358,7 +358,7 @@ img.galleryItemImage {
 .galleryItemGrowing:hover .galleryItem .galleryItemImage { height: 300px; }
 
 .galleryItemCustom {
-    background-image: url('./res/img/empty_wide.jpg');
+    background-image: url('./res/img/empty_wide.webp');
     background-size: cover;
     min-width: 260px;
 }
@@ -553,9 +553,9 @@ div.notifications img {
 }
 
 .spinner {
-    -webkit-mask-image: url(res/icons/mask_spinner.png);
+    -webkit-mask-image: url(res/icons/mask_spinner.webp);
     -webkit-mask-size: cover;
-    mask-image: url(res/icons/mask_spinner.png);
+    mask-image: url(res/icons/mask_spinner.webp);
     mask-size: cover;
 }
 
