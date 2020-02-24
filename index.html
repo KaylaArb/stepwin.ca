@@ -58,6 +58,8 @@
             <img src="img/logo.webp" alt="StepWin Logo">
             <div id="slogan">
                 Straightforward energy modeling for BC's residential builders.
+                <div class="spacer" style="width: 25px; height: 25px;"></div>
+                <a class="button ghost-button" href="https://goo.gl/forms/Tf8cYlltRCxzuMTx1">Join our next webinar</a>
             </div>
         </div>
         <div id="homes">
@@ -194,6 +196,15 @@
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6772117.js"></script>
 
     <script src="main.js"></script>
+
+    <!-- Late PolyFills -->
+    <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
+    <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
+    <script>
+        var webpMachine = new webpHero.WebpMachine()
+        webpMachine.polyfillDocument()
+    </script>
+    <!-- End of Late PolyFills -->
 </body>
 
 </html>
