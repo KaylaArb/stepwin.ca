@@ -265,8 +265,7 @@ section#products {
     flex: 1;
 }
 .column .product-image, .transparent-column .product-image {
-    max-width: 250px;
-    width: 70%;
+    max-height: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
